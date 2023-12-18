@@ -26,10 +26,10 @@ It combines both, the power of **Telegram** and **Youtube-dl** to deliver a seam
 <!-- ROADMAP -->
 # Roadmap
 
-- [ ] Telegram getUpdates method
-- [ ] Support for Youtube links
-- [ ] Support for Facebook links
-- [ ] Support for Instagram links
+- [x] Telegram getUpdates method
+- [x] Support for Youtube links
+- [x] Support for Facebook links
+- [x] Support for Instagram links
 - [ ] Support for telegram webhook method
 
 See the [open issues](https://github.com/ramos-adrian/savage-feast-burger/issues) for a full list of proposed features (and known issues).
@@ -52,23 +52,20 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    git clone https://github.com/ramos-adrian/savage-feast-burger.git
    ```
-2. Install requirements
+2. Install requirements. It is recommended to use a [Virtual Environment](https://docs.python.org/3/tutorial/venv.html).
    ```sh
     pip install -r requirements.txt
     ```
 3. Get your Telegram Bot token from [https://t.me/botfather](https://t.me/botfather).
-4. Get your Telegram API ID and API HASH from [https://my.telegram.org/](https://my.telegram.org/). (You can follow instructions here [https://core.telegram.org/api/obtaining_api_id](https://core.telegram.org/api/obtaining_api_id)).
-5. Create a .env file with the following content:
+4. Create a .env file with the following content:
     ```sh
-     TELEGRAM_API_ID=<your-telegram-api-id>
-     TELEGRAM_API_HASH=<your-telegram-api-hash>
      TELEGRAM_BOT_TOKEN=<your-telegram-token>
      ```
-6. Run the bot
+5. Run the bot
     ```sh
-    python3 main.py
+    python3 src/main.py
     ```
-7. Add the bot to a group and send a video link to the group. The bot will download the video and send it to the group.
+6. Add the bot to a group and send a video link to the group. The bot will download the video and send it to the group.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
